@@ -43,7 +43,8 @@ function draw() {
   translate (width/2, height/2-70);
   rotate(angle);
   rect(-125, -15, 250, 15);
-  angle += (asdasd*3-asd*2)*0.001;
+  if(angle >= -0.24 && angle <= 0.24)
+	angle += (asdasd*3-asd*2)*0.001;
   if ((asdasd*3-asd*2)*0.001 == 0){
 	  if(angle > 0 )
 		  angle -= 0.001
