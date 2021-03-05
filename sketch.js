@@ -1,8 +1,8 @@
 let buttonInc;
 let buttonDec
-let asd = 0;
+let asd = 1;
 let asdST;
-let asdasd = 0;
+let asdasd = 1;
 let asdasdST;
 let ans;
 let angle=0;
@@ -44,8 +44,8 @@ function draw() {
   translate (width/2, height/2-70);
   rotate(angle);
   rect(-125, -30, 250, 30);
-  angle += (asdasd-asd)*0.001;
-  if ((asdasd-asd)*0.001 == 0){
+  angle += (asdasd*3-asd*2)*0.001;
+  if ((asdasd*3-asd*2)*0.001 == 0){
 	  if(angle > 0 )
 		  angle -= 0.001
 	  else if(angle < 0)
@@ -54,7 +54,6 @@ function draw() {
 }
 
 function incIndex1() {
-	
   asd++;
 }
 
